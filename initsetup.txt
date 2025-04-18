@@ -1,3 +1,19 @@
-git remote add origin https://github.com/bipulkkuri/github-actions-demo.git
+
+Run
+
+fork the repo 
+
+npm i --package-lock-only
+
+Change the package.json file with your repo references
+
+Now commit and push the code base
+#git init
+
+git add .
+git commit -m "fix references"
 git branch -M main
-git push -u origin main
+git remote add origin https://github.com/bipulkkuri/github-actions-demo.git
+ git push -u origin main
+
+
