@@ -1,34 +1,42 @@
 {
-    "name": "node-github-demo-actions",
-    "version": "1.0.0",
-    "description": "",
-    "author": "Bipul Kumar Kuri",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js",
-        "test": "jest --runInBand --detectOpenHandles --forceExit --coverageDirectory='test-results' --collectCoverageFrom='*.js' --collectCoverage=true"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/bipulkkuri/github-actions-demo.git"
-    },
-    "keywords": [],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/bipulkkuri/github-actions-demo/issues"
-    },
-    "homepage": "https://github.com/bipulkkuri/github-actions-demo/#readme",
-    "dependencies": {
-        "express": "^5.1.0"
-    },
-    "devDependencies": {
-        "jest": "^29.7.0",
-        "supertest": "^7.1.0"
-    },
-    "jest": {
+  "name": "node-github-demo-actions",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Bipul Kumar Kuri",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "format": "prettier --write .",
+    "test": "jest --runInBand --detectOpenHandles --forceExit --coverageDirectory='test-results' --collectCoverageFrom='*.js' --collectCoverage=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipulkkuri/github-actions-demo.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bipulkkuri/github-actions-demo/issues"
+  },
+  "homepage": "https://github.com/bipulkkuri/github-actions-demo/#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "supertest": "^7.1.0"
+  },
+  "jest": {
     "testEnvironment": "node",
-    "coveragePathIgnorePatterns": ["/node_modules/"],
-    "testPathIgnorePatterns": ["/node_modules/"],
-    "collectCoverageFrom": ["*.js"]
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "collectCoverageFrom": [
+      "*.js"
+    ]
   }
 }
